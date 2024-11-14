@@ -11,7 +11,7 @@
 
 ### **Encapsulation:**
 
-Encapsulation is defined as wrapping up data and information under a single unit to manipulate them  
+Encapsulation is defined as wrapping up data and information under a single unit to manipulate them.
 
 
 <img src="Readme_Imgs/Encapsulation.jpg" alt="Encapsulation_img" width="500">
