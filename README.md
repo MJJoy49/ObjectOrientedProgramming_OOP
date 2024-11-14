@@ -7,6 +7,7 @@
 - Inheritance
 - Polymorphism
 
+*---------------------------------------------------------------------------------------*
 
 ### **Encapsulation**
 
@@ -17,7 +18,7 @@ Encapsulation is defined as wrapping up data and information under a single unit
 
 In this example, the age attribute is private, and we manipulate it using the public property Age, ensuring that only valid values can be assigned to age.
 
-
+*---------------------------------------------------------------------------------------*
 
 ### **Abstraction**
 
@@ -31,6 +32,7 @@ Explanation:
 - The user interacts with the car through the SetCarDetails and DisplayCarDetails methods, which are the essential operations the user needs to know about, without needing to access or understand the internal fields directly.
 
 
+*---------------------------------------------------------------------------------------*
 
 ### **Inheritance**
 
@@ -38,7 +40,7 @@ Inheritance allows us to define a class in terms of another class, which makes i
 
 ##### Class Derived Class:
 Access specifier base class. The idea of inheritance implements the is a relationship.
-#### For example, a mammal is an animal, a dog is a mammal, hence a dog is an animal as well, and so on.
+_For example, a mammal is an animal, a dog is a mammal, hence a dog is an animal as well, and so on._
 
 
 
@@ -58,7 +60,7 @@ This demonstrates the "is-a" relationship:
 - A Mammal "is-a" Animal (because Mammal inherits from Animal).
 *So, Dog "is-a" Animal as well!*
 
-
+*---------------------------------------------------------------------------------------*
 
 
 ### **Polymorphism**
@@ -76,5 +78,5 @@ Explanation:
 - In the Main method, the same method Speak is called on both myDog and myCat, but the output differs based on the actual object type, demonstrating polymorphism.
 - This is polymorphism in action: the same method name behaves differently depending on the object calling it.
 
-
+*---------------------------------------------------------------------------------------*
 
