@@ -1,6 +1,6 @@
 # Object Oriented Programming (OOP)
 
-**_The basic OOP concept has 3 type_**
+**_The basic OOP concept has 4 types._**
 
 - Encapsulation
 - Abstraction
@@ -9,7 +9,7 @@
 
 *---------------------------------------------------------------------------------------*
 
-### **Encapsulation**
+### **Encapsulation:**
 
 Encapsulation is defined as wrapping up data and information under a single unit to manipulate them  
 
@@ -20,7 +20,7 @@ In this example, the age attribute is private, and we manipulate it using the pu
 
 *---------------------------------------------------------------------------------------*
 
-### **Abstraction**
+### **Abstraction:**
 
 Data Abstraction refers to providing only essential information to the outside world and hiding the background details, i.e., representing the needed information in the program without presenting the details.
 #### Example: *public*, *private*, *protected*
@@ -34,7 +34,7 @@ Explanation:
 
 *---------------------------------------------------------------------------------------*
 
-### **Inheritance**
+### **Inheritance:**
 
 Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse code functionality and reduces implementation time. The existing class is called the base class, and the new class is referred to as the derived class.
 
@@ -63,7 +63,7 @@ This demonstrates the "is-a" relationship:
 *---------------------------------------------------------------------------------------*
 
 
-### **Polymorphism**
+### **Polymorphism:**
 
 The word polymorphism means having many forms. Typically, polymorphism occurs when there is a hierarchy of classes, and they are related by inheritance.
 #### Example: *Function overloading*, *Function overriding*
