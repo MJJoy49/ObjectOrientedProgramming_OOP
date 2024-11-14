@@ -25,3 +25,7 @@ Data Abstraction refers to providing only essential information to the outside w
 #### Example: *public*, *private*, *protected*
 
 <img src="Readme_Imgs/Abstraction.jpg" alt="Abstraction_img" width="400">
+
+Explanation:
+- Data Abstraction is achieved by hiding the internal details of the Car class (such as the model and engineType fields) from the outside world.
+- The user interacts with the car through the SetCarDetails and DisplayCarDetails methods, which are the essential operations the user needs to know about, without needing to access or understand the internal fields directly.
