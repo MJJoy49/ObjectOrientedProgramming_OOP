@@ -7,18 +7,18 @@
 - Inheritance
 - Polymorphism
 
-*---------------------------------------------------------------------------------------*
+*--------------------------------------------------------------------------*
 
 ### **Encapsulation:**
 
 Encapsulation is defined as wrapping up data and information under a single unit to manipulate them  
 
 
-<img src="Readme_Imgs/Encapsulation.jpg" alt="Encapsulation_img" width="500" height="350">
+<img src="Readme_Imgs/Encapsulation.jpg" alt="Encapsulation_img" width="500">
 
 In this example, the age attribute is private, and we manipulate it using the public property Age, ensuring that only valid values can be assigned to age.
 
-*---------------------------------------------------------------------------------------*
+*--------------------------------------------------------------------------*
 
 ### **Abstraction:**
 
@@ -32,7 +32,7 @@ Explanation:
 - The user interacts with the car through the SetCarDetails and DisplayCarDetails methods, which are the essential operations the user needs to know about, without needing to access or understand the internal fields directly.
 
 
-*---------------------------------------------------------------------------------------*
+*--------------------------------------------------------------------------*
 
 ### **Inheritance:**
 
@@ -60,7 +60,7 @@ This demonstrates the "is-a" relationship:
 - A Mammal "is-a" Animal (because Mammal inherits from Animal).<br>
 *So, Dog "is-a" Animal as well!*
 
-*---------------------------------------------------------------------------------------*
+*--------------------------------------------------------------------------*
 
 
 ### **Polymorphism:**
@@ -78,5 +78,5 @@ Explanation:
 - In the Main method, the same method Speak is called on both myDog and myCat, but the output differs based on the actual object type, demonstrating polymorphism.
 - This is polymorphism in action: the same method name behaves differently depending on the object calling it.
 
-*---------------------------------------------------------------------------------------*
+*--------------------------------------------------------------------------*
 
