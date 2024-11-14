@@ -13,7 +13,7 @@
 Encapsulation is defined as wrapping up of data and information under a single unit to manipulates them
 
 
-<img src="Readme_Imgs/Encapsulation.jpg" alt="Encapsulation_img" width="400" height="400">
+<img src="Readme_Imgs/Encapsulation.jpg" alt="Encapsulation_img" width="400" height="350">
 
 In this example, the age attribute is private, and we manipulate it using the public property Age, ensuring that only valid values can be assigned to age.
 
