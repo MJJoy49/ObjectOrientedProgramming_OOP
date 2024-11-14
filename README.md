@@ -32,6 +32,35 @@ Explanation:
 
 
 
+### **Inheritance**
+
+Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse code functionality and reduces implementation time. The existing class is called the base class, and the new class is referred to as the derived class.
+
+##### Class Derived Class:
+Access specifier base class. The idea of inheritance implements the is a relationship.
+#### For example, a mammal is an animal, a dog is a mammal, hence a dog is an animal as well, and so on.
+
+
+
+<img src="Readme_Imgs/Inheritance_p1.jpg" alt="Inheritance_img" width="500">
+<img src="Readme_Imgs/Inheritance_p2.jpg" alt="Inheritance_img" width="500">
+<img src="Readme_Imgs/Inheritance_p3.jpg" alt="Inheritance_img" width="500">
+<img src="Readme_Imgs/Inheritance_p4.jpg" alt="Inheritance_img" width="500">
+
+
+Explanation:
+- The Animal class is the base class with the Eat() method.
+- The Mammal class inherits from Animal and adds a Walk() method.
+- The Dog class inherits from Mammal and adds a Bark() method.
+
+This demonstrates the "is-a" relationship:
+- A Dog "is-a" Mammal (because Dog inherits from Mammal).
+- A Mammal "is-a" Animal (because Mammal inherits from Animal).
+*So, Dog "is-a" Animal as well!*
+
+
+
+
 ### **Polymorphism**
 
 The word polymorphism means having many forms. Typically, polymorphism occurs when there is a hierarchy of classes, and they are related by inheritance.
@@ -46,3 +75,6 @@ Explanation:
 - Dog and Cat classes override this method to provide their own implementation.
 - In the Main method, the same method Speak is called on both myDog and myCat, but the output differs based on the actual object type, demonstrating polymorphism.
 - This is polymorphism in action: the same method name behaves differently depending on the object calling it.
+
+
+
