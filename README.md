@@ -57,7 +57,7 @@ Explanation:
 
 This demonstrates the "is-a" relationship:
 - A Dog "is-a" Mammal (because Dog inherits from Mammal).
-- A Mammal "is-a" Animal (because Mammal inherits from Animal).
+- A Mammal "is-a" Animal (because Mammal inherits from Animal).<br>
 *So, Dog "is-a" Animal as well!*
 
 *---------------------------------------------------------------------------------------*
