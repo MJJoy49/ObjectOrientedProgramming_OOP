@@ -39,7 +39,7 @@ Explanation:
 Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse code functionality and reduces implementation time. The existing class is called the base class, and the new class is referred to as the derived class.
 
 ##### Class Derived Class:
-Access specifier base class. The idea of inheritance implements the is a relationship.
+Access specifier base class. The idea of inheritance implements the is a relationship.<br>
 _For example, a mammal is an animal, a dog is a mammal, hence a dog is an animal as well, and so on._
 
 
