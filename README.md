@@ -12,4 +12,6 @@
 
 Encapsulation is defined as wrapping up of data and information under a single unit to manipulates them
 
-![Encapsulation_img](Readme_Imgs/Encapsulation.jpg)
+
+<img src="Readme_Imgs/Encapsulation.jpg" alt="Encapsulation_img" width="100" height="100">
+
