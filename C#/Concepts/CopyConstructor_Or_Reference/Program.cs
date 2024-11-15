@@ -13,18 +13,28 @@ namespace CopyConstructor_Or_Reference
         {
             Doctor D1 = new Doctor("dr. Rony", "Haddi", 550);
 
+            //Doctor D1 = new Doctor();
+            //D1.name = "dr. Rony";
+            //D1.specialty = "Haddi";
+            //D1.visitFree = 500;
+
             Console.WriteLine("Befor obj refernce D1");
             D1.showDetails();
 
 
             // reference------------------------
-            Doctor D2 = new Doctor(ref D1);
+            Doctor D2 = D1;
             Console.WriteLine("Refernce form D1 now D2 show");
             D2.showDetails();
 
 
             Console.WriteLine("now change value D2");
             D2 = new Doctor("dr. Jony", "Haddi and Buk", 800);
+
+            //D2.name = "dr. Jony";
+            //D2.specialty = "Haddi and Buk";
+            //D2.visitFree = 800;
+
             D2.showDetails();
 
 

@@ -9,6 +9,15 @@ namespace CopyConstructor_Or_Reference
         public string specialty;
         public double visitFree;
 
+        //NO perameter constructor
+        Doctor() { }
+
+        // this is Destructor. its call Automatically
+        ~Doctor() {
+            Console.WriteLine("Hi, I am destructor");
+        }
+
+
 
         public Doctor(string name, string specialty, double visitFree)
         {
@@ -19,14 +28,14 @@ namespace CopyConstructor_Or_Reference
         }
 
 
-        //copy constructor--------------
-        public Doctor(ref Doctor doctor)
-        {
-            this.name = doctor.name;
-            this.specialty = doctor.specialty;
-            this.visitFree = doctor.visitFree;
+        ////copy constructor--------------
+        //public Doctor(ref Doctor doctor)
+        //{
+        //    this.name = doctor.name;
+        //    this.specialty = doctor.specialty;
+        //    this.visitFree = doctor.visitFree;
 
-        }
+        //}
 
 
         public void showDetails()
