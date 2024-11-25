@@ -10,21 +10,7 @@ namespace Lab_task4
     {
         static void Main(string[] args)
         {
-            //book
-            //book name, book Id, quantity, set get +print
-            // virtual 
-
-
-            //story book
-            // publisher
-            //type
-            //set + get+ print
-
-            //academic book
-            //publisher
-            //type
-            //set get print 
-
+            
 
             StoryBook sb1 = new StoryBook("BookA","24-2233",32,"person k","Story Book");
             AcademicBook ab1 = new AcademicBook("BookB", "24-10033", 50, "person k", "Acadamic Book");

@@ -17,23 +17,7 @@ namespace OnlineShoppingSystem
         {
 
 
-            //List<string> name= new List<string>();
-
-
-            //Console.Write("how many list you want:");
-            //int n=int.Parse(Console.ReadLine());
-
-            //for (int i = 0; i < n; i++) 
-            //{
-            //    Console.Write($"Enter your list num {i+1}:");
-            //    name.Add(Console.ReadLine());
-            //}
-
-
-            //foreach (var item in name)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            
 
 
 

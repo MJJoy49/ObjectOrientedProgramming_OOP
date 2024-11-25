@@ -68,8 +68,8 @@ namespace Lab_task4
         public void PrintBook()
         {
             Console.WriteLine($"-----------BOOK Details---------");
-            Console.WriteLine($"Book Name: {this.BookName}");
-            Console.WriteLine($"Book Id: {this.id}");
+            Console.WriteLine($"Book Name    : {this.BookName}");
+            Console.WriteLine($"Book Id      : {this.id}");
             Console.WriteLine($"Book Quantity: {this.quantity}");
             Console.WriteLine("---------------------------------");
             Console.WriteLine("");
