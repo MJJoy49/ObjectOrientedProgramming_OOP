@@ -10,9 +10,9 @@ namespace Lab_task4
     {
         //book name, book Id, quantity, set get +print
 
-        protected string BookName;
-        protected string id;
-        protected int quantity;
+        protected string BookName { get; set; }
+        protected string id { get; set; }
+        protected int quantity { get; set; }
 
 
 
@@ -33,33 +33,33 @@ namespace Lab_task4
             this.id = id;
             this.quantity = quantity;
         }
-        public void setBookName(string BookName)
-        {
-            this.BookName = BookName;
-        }
-        public string getBookName() { return this.BookName; }
+        //public void setBookName(string BookName)
+        //{
+        //    this.BookName = BookName;
+        //}
+        //public string getBookName() { return this.BookName; }
 
 
 
 
-        public void setBookId(string id)
-        {
-            this.id = id;
-        }
+        //public void setBookId(string id)
+        //{
+        //    this.id = id;
+        //}
 
-        public string getBookId() { return this.id; }
-
-
+        //public string getBookId() { return this.id; }
 
 
 
 
-        public void setQuantity(int quantity)
-        {
-            this.quantity = quantity;
-        }
 
-        public int getQuantity() { return this.quantity; }
+
+        //public void setQuantity(int quantity)
+        //{
+        //    this.quantity = quantity;
+        //}
+
+        //public int getQuantity() { return this.quantity; }
 
 
 

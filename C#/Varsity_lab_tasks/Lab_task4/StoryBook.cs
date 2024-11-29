@@ -11,8 +11,12 @@ namespace Lab_task4
 
         
 
-        private string publisher;
-        private string type;
+        private string publisher { get; set; }
+        private string type { get; set; }
+
+
+
+        public StoryBook() { }
 
 
         public StoryBook(string BookName, string id,int quantity, string publisher, string type) : base(BookName,id,quantity)
@@ -23,21 +27,21 @@ namespace Lab_task4
 
 
 
-        public void setPublisher(string publisher)
-        {
-            this.publisher = publisher;
-        }
-        public string getPublisher() { return this.publisher; }
+        //public void setPublisher(string publisher)
+        //{
+        //    this.publisher = publisher;
+        //}
+        //public string getPublisher() { return this.publisher; }
 
 
 
 
-        public void setType(string type)
-        {
-            this.type = type;
-        }
+        //public void setType(string type)
+        //{
+        //    this.type = type;
+        //}
 
-        public string getType() { return this.type; }
+        //public string getType() { return this.type; }
 
 
 
