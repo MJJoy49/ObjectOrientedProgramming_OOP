@@ -10,6 +10,8 @@ namespace For_IT_Company
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hlw");
         }
+
     }
 }
