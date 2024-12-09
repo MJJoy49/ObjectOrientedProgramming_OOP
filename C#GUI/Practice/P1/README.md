@@ -7,10 +7,10 @@
 **Application.Exit();**  
 
 ---
-<p>
-## in main form add other from  
-**1st isMdiContainer = will be true** 
-**2nd**
+<div>
+<h2>in main form add other from </h2> 
+<h3>1st isMdiContainer = will be true</h3>
+<h3>2nd</h3>
 ```csharp
 OtherForm? P1; 
 private void Page1_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ private void Page1_Click(object sender, EventArgs e)
 
 
 
-</p>
+</div>
 
 ---
 
