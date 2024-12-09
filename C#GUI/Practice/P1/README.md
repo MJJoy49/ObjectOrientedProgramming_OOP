@@ -6,6 +6,13 @@
 ## Exit the Entire Application  
 **Application.Exit();**  
 
+
+
+---
+
+## Exit the Entire Application  
+**Application.Exit();** 
+
 ---
 <div>
 <h2>in main form add other from </h2> 
@@ -43,7 +50,3 @@ private void Page1_Click(object sender, EventArgs e)
 
 
 
----
-
-## Exit the Entire Application  
-**Application.Exit();** 
