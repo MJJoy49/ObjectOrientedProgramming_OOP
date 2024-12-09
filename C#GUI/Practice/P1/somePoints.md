@@ -1,18 +1,17 @@
-## Close the current form
-<br>
-**This is bold text**
-<br><br>
+## Close the Current Form  
+**This is bold text**  
 
-## Close the current form
-<br>
-**this.Close();**
-<br><br>
+---
 
-## Exit the entire application
-<br>
-**Application.Exit();**
-<br><br>
+## Close the Current Form  
+**this.Close();**  
 
-##Close the current form
-**This is bold text**
-<br><br>
+---
+
+## Exit the Entire Application  
+**Application.Exit();**  
+
+---
+
+## Close the Current Form  
+**This is bold text**  
