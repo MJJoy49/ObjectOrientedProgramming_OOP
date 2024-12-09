@@ -11,7 +11,8 @@
 ## in main form add other from  
 **1st isMdiContainer = will be true** 
 **2nd**
-OtherForm? P1;
+</br>
+OtherForm? P1; </br>
 private void Page1_Click(object sender, EventArgs e)
         {
 
