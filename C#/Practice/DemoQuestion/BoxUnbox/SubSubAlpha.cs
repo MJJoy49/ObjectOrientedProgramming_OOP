@@ -52,7 +52,7 @@ namespace BoxUnbox
         }
     }
 
-
+    
 
     public class SubSubAlpha : Alpha
     {
@@ -62,12 +62,12 @@ namespace BoxUnbox
         }
         public static void printI(A a1)
         {
-            Console.WriteLine(a1.i);
+            Console.WriteLine(a1.i);  //----------------------
         }
 
-        public static void printJ(B b1)
+        public static void printJ(B b1) 
         {
-            Console.WriteLine(b1.j);
+            Console.WriteLine(b1.j);  //------------------------
         }
 
 
@@ -80,27 +80,27 @@ namespace BoxUnbox
             B b = new B();
             b.j = 25;
 
-            printI(a);
-            printI(b);
-            printJ(b);
+            printI(a);  //  21
+            printI(b);  // 25
+            printJ(b);  // 25
 
 
-            Console.WriteLine(s);
+            Console.WriteLine(s); //------------------- This is a string
 
-            Console.WriteLine("Find the output");
-            s = null;
-            new SubSubAlpha();
-            Console.WriteLine(s);
+            Console.WriteLine("Find the output"); //Find the output
+            s = null; // 0
+            new SubSubAlpha(); //
+            Console.WriteLine(s); //---------------------- This is a string
 
-            PrintA pa = new PrintA(ref a.i);
+            PrintA pa = new PrintA(ref a.i); //
 
             PrintB pb = new PrintB(out s);
 
 
-            Console.WriteLine("Out output = " + s);
-            Console.WriteLine("printA = " + pa.printA);
-            Console.WriteLine("Ref output = " + a.i);
-            Console.WriteLine("printB = " + pb.printB);
+            Console.WriteLine("Out output = " + s);//-------------------Out output = Try harder!
+            Console.WriteLine("printA = " + pa.printA); //------------printA = 21
+            Console.WriteLine("Ref output = " + a.i); //----------Ref output= 21
+            Console.WriteLine("printB = " + pb.printB);//--------printB = Try harder!
         }
     }
 
