@@ -7,7 +7,7 @@
 **Application.Exit();**  
 
 ---
-
+<p>
 ## in main form add other from  
 **1st isMdiContainer = will be true** 
 **2nd**
@@ -36,7 +36,10 @@ private void Page1_Click(object sender, EventArgs e)
         }
 
 
+
+</p>
+
 ---
 
-## Close the Current Form  
-**This is bold text** 
+## Exit the Entire Application  
+**Application.Exit();** 
