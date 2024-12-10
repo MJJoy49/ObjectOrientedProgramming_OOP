@@ -52,7 +52,7 @@
             // closeButton
             // 
             closeButton.BackColor = Color.Transparent;
-            closeButton.Image = Properties.Resources.close;
+            closeButton.Image = P1.Properties.Resources.close;
             closeButton.Location = new Point(1619, 19);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(45, 48);
@@ -96,6 +96,7 @@
             page2.TabIndex = 3;
             page2.Text = "page2";
             page2.UseVisualStyleBackColor = true;
+            page2.Click += page2_Click_1;
             // 
             // page3
             // 
