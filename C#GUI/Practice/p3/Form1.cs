@@ -45,5 +45,26 @@ namespace p3
         {
 
         }
+
+        private void label1_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("this is siam");
+        }
+
+        private void label1_MouseHover(object sender, EventArgs e)
+        {
+            ForeColor = Color.Red;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+
+        }
     }
 }
