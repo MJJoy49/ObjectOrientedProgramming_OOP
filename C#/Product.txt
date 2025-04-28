@@ -1,0 +1,171 @@
+/* 
+hey miska -_-
+File format
+------------
+folder/name_space : RetailProductManagement
+1: Product.cs
+2: DiscountedProduct.cs
+3: PremiumProduct.cs
+4: Program.cs
+*/
+//----------------------------Product.cs-----------------------------------
+namespace RetailProductManagement
+{
+    public class Product
+    {
+        public int ProductId { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public static double VatRate { get; set; } = 0.1;
+
+        public Product() { }
+
+        public Product(int productId, string name, double price)
+        {
+            ProductId = productId;
+            Name = name;
+            Price = price;
+        }
+
+        public virtual void ShowDetails()
+        {
+            Console.WriteLine($"Product ID: {ProductId}, Name: {Name}, Price: {Price}");
+        }
+    }
+}
+
+//------------------------------------------DiscountedProduct.cs--------------------------------------------------
+
+namespace RetailProductManagement
+{
+    public class DiscountedProduct : Product
+    {
+        public double DiscountPercent { get; set; }
+        public string Category { get; set; }
+
+        public DiscountedProduct() { }
+
+        public DiscountedProduct(int productId, string name, double price, double discountPercent, string category)
+            : base(productId, name, price)
+        {
+            DiscountPercent = discountPercent;
+            Category = category;
+        }
+
+        public double GetFinalPrice()
+        {
+            double discountedPrice = Price - (Price * DiscountPercent / 100);
+            return discountedPrice + (discountedPrice * VatRate);
+        }
+
+        public bool HasSeasonalOffer()
+        {
+            return Category == "Festival" || Category == "Winter";
+        }
+
+        public override void ShowDetails()
+        {
+            base.ShowDetails();
+            Console.WriteLine($"Discount: {DiscountPercent}%, Category: {Category}");
+        }
+    }
+}
+
+//--------------------------------------PremiumProduct.cs---------------------------------------------------
+
+
+namespace RetailProductManagement
+{
+    public class PremiumProduct : Product
+    {
+        public int WarrantyYears { get; set; }
+        public string CountryOfOrigin { get; set; }
+
+        public PremiumProduct() { }
+
+        public PremiumProduct(int productId, string name, double price, int warrantyYears, string countryOfOrigin)
+            : base(productId, name, price)
+        {
+            WarrantyYears = warrantyYears;
+            CountryOfOrigin = countryOfOrigin;
+        }
+
+        public bool IsEligibleForVIPReturn()
+        {
+            return WarrantyYears >= 2;
+        }
+
+        public string ShowWarrantyInfo()
+        {
+            return $"Warranty: {WarrantyYears} years";
+        }
+
+        public string ShowWarrantyInfo(string note)
+        {
+            return $"Warranty: {WarrantyYears} years ({note})";
+        }
+
+        public override void ShowDetails()
+        {
+            base.ShowDetails();
+            Console.WriteLine($"Warranty: {WarrantyYears} years, Country of Origin: {CountryOfOrigin}");
+        }
+    }
+}
+
+
+//----------------------------------------Program.cs------------------------
+using RetailProductManagement;
+
+class Program
+{
+    static void Main()
+    {
+        // DiscountedProduct - Default Constructor
+        DiscountedProduct dp1 = new DiscountedProduct();
+        dp1.ProductId = 1;
+        dp1.Name = "Winter Jacket";
+        dp1.Price = 2000;
+        dp1.DiscountPercent = 20;
+        dp1.Category = "Winter";
+        dp1.ShowDetails();
+        Console.WriteLine($"Final Price: {dp1.GetFinalPrice()}");
+        Console.WriteLine($"Seasonal Offer: {dp1.HasSeasonalOffer()}");
+        Console.WriteLine();
+
+        // DiscountedProduct - Parameterized Constructor
+        DiscountedProduct dp2 = new DiscountedProduct(2, "Festival Lights", 500, 15, "Festival");
+        dp2.ShowDetails();
+        Console.WriteLine($"Final Price: {dp2.GetFinalPrice()}");
+        Console.WriteLine($"Seasonal Offer: {dp2.HasSeasonalOffer()}");
+        Console.WriteLine();
+
+        // PremiumProduct - Default Constructor
+        PremiumProduct pp1 = new PremiumProduct();
+        pp1.ProductId = 3;
+        pp1.Name = "Smartphone";
+        pp1.Price = 1000;
+        pp1.WarrantyYears = 3;
+        pp1.CountryOfOrigin = "Japan";
+        pp1.ShowDetails();
+        Console.WriteLine(pp1.ShowWarrantyInfo());
+        Console.WriteLine(pp1.ShowWarrantyInfo("Extended Warranty"));
+        Console.WriteLine($"Eligible for VIP Return: {pp1.IsEligibleForVIPReturn()}");
+        Console.WriteLine();
+
+        // PremiumProduct - Parameterized Constructor
+        PremiumProduct pp2 = new PremiumProduct(4, "Laptop", 1500, 1, "USA");
+        pp2.ShowDetails();
+        Console.WriteLine(pp2.ShowWarrantyInfo());
+        Console.WriteLine(pp2.ShowWarrantyInfo("Limited Warranty"));
+        Console.WriteLine($"Eligible for VIP Return: {pp2.IsEligibleForVIPReturn()}");
+    }
+}
+//------------------------------end---------------------------------------
+
+
+
+
+
+
+
